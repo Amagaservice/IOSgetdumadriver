@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>569878170904-1gb8l8do9be0gerl8qf8pot54u82asn5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.569878170904-1gb8l8do9be0gerl8qf8pot54u82asn5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD-N8wVz088c1J0c5X9CoKTGg08p3_TN0s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>569878170904</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.getdumadriver.app</string>
+	<key>PROJECT_ID</key>
+	<string>getdumaweb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>getdumaweb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:569878170904:ios:5214a24cb3eb8f3579a26d</string>
+	<key>DATABASE_URL</key>
+	<string>https://getdumaweb-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
