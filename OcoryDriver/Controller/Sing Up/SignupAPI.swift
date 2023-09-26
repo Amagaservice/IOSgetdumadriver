@@ -81,7 +81,7 @@ extension SignUpViewController{
     //    let imageDataRegistration = mediaRegistration.jpegData(compressionQuality: 0.25)
 
         print("image data\(String(describing: imageData))")
-        let url = URL(string: "https://www.getduma.com/register")!
+        let url = URL(string: "\(baseURL)register")!
         print(url)
 //        let headers: HTTPHeaders = [
 //           // "Content-type": "multipart/form-data",

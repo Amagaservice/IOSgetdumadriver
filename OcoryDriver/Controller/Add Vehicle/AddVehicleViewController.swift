@@ -597,7 +597,7 @@ extension AddVehicleViewController{
 //                multipartFormData.append(imageOrVideo!.jpegData(compressionQuality: 0.5)!, withName: "car_pic" , fileName: "file.jpeg", mimeType: "image/jpeg")
 //            }
         },
-        to: "https://www.getduma.com/add_vehicle_detail", method: .post , headers: headers)
+        to: "\(baseURL)add_vehicle_detail", method: .post , headers: headers)
         .responseJSON(completionHandler: { (data) in
             Indicator.shared.hideProgressView()
             let d = data.value
@@ -638,7 +638,7 @@ extension AddVehicleViewController{
 //                    multipartFormData.append(value, withName: param.key)
 //                }
             },
-            to: "https://www.getduma.com/add_vehicle_detail",
+            to: "\(baseURL)add_vehicle_detail",
             method: .post ,
             headers: headers
         )
@@ -657,9 +657,9 @@ extension AddVehicleViewController{
         print("image data\(String(describing: imageData))")
         var url = URL(string:"")
         if screen == "edit"{
-            url = URL(string: "https://www.getduma.com/update_vehicle_detail")
+            url = URL(string: "\(baseURL)update_vehicle_detail")
         }else{
-            url = URL(string: "https://www.getduma.com/add_vehicle_detail")
+            url = URL(string: "\(baseURL)add_vehicle_detail")
         }
       //  let url = URL(string: "https://www.getduma.com/add_vehicle_detail")
         let headers: HTTPHeaders = [

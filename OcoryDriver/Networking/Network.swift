@@ -12,8 +12,8 @@ import Alamofire
 enum methodType {
     case POST,GET
 }
-var baseURL = "https://www.getduma.com/"
-//var baseURL = "https://staging.getduma.com/"
+//var baseURL = "https://www.getduma.com/"
+var baseURL = "https://staging.getduma.com/"
 var imgURL = "https://promatics.xyz/azy/public/images/product/"
 var profileImg = "https://promatics.xyz/azy/public/images/profile/"
 

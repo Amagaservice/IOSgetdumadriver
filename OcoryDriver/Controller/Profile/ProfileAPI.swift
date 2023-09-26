@@ -77,7 +77,7 @@ extension ProfileViewController{
                 )
             }
         },
-        to: "https://www.getduma.com/update_profile_of_user", method: .post , headers: headers )
+        to: "\(baseURL)update_profile_of_user", method: .post , headers: headers )
         .responseJSON(completionHandler: { (data) in
             Indicator.shared.hideProgressView()
             let d = data.value
@@ -138,7 +138,7 @@ extension ProfileViewController{
     func uploadPhotoGallaryNew(media: UIImage, params: [String:Any]){
         let imageData = media.jpegData(compressionQuality: 0.20)
               print("image data\(String(describing: imageData))")
-        let url = URL(string: "https://www.getduma.com/upload_profile_pic")!
+        let url = URL(string: "\(baseURL)upload_profile_pic")!
         let headers: HTTPHeaders = [
            // "Content-type": "multipart/form-data",
             "Accept": "application/json",
@@ -234,7 +234,7 @@ extension ProfileViewController{
     func uploadDocImg(media: UIImage, params: [String:Any]){
         let imageData = media.jpegData(compressionQuality: 0.10)
               print("image data\(String(describing: imageData))")
-        let url = URL(string: "https://www.getduma.com/update_profile_of_user")!
+        let url = URL(string: "\(baseURL)update_profile_of_user")!
         let headers: HTTPHeaders = [
            // "Content-type": "multipart/form-data",
             "Accept": "application/json",

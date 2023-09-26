@@ -292,7 +292,7 @@ extension EditProfileViewController{
         print(param)
         let imageDataInsurance = mediaInsurance.jpegData(compressionQuality: 0.15)
         print("image data\(String(describing: imageData))")
-        let url = URL(string: "https://www.getduma.com/update_vehicle_detail")!
+        let url = URL(string: "\(baseURL)update_vehicle_detail")!
         let headers: HTTPHeaders = [
            // "Content-type": "multipart/form-data",
             "Accept": "application/json",

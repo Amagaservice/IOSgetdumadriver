@@ -186,7 +186,7 @@ extension AcceptedRequestViewController: UITableViewDataSource{
         let mobile =  NSUSERDEFAULT.value(forKey: kownMobile)
         
         let requestParams: [String: Any] = ["Caller": mobile ?? "", "country_code" : cc ?? ""]
-        let urlString = "https://www.getduma.com/twilio/forward_call"
+        let urlString = "\(baseURL)twilio/forward_call"
         let url = URL.init(string: urlString)
         print(url)
         print(requestParams)
@@ -370,7 +370,7 @@ extension AcceptedRequestViewController : AVAudioRecorderDelegate, AVAudioPlayer
         print("Error while playing audio \(error!.localizedDescription)")
     }
     func requestForUpload( audioFilePath: URL , parameters : [String: Any] ) {
-        let url = URL(string: "https://www.getduma.com/audio_capture")!
+        let url = URL(string: "\(baseURL)audio_capture")!
         let headers: HTTPHeaders = [
             "Content-type": "multipart/form-data",
             "Accept": "application/json",

@@ -89,7 +89,7 @@ class UploadDocVC: UIViewController {
       
 
         print("image data\(String(describing: imageData))")
-        let url = URL(string: "https://www.getduma.com/upload_document")!
+        let url = URL(string: "\(baseURL)upload_document")!
         let headers: HTTPHeaders = [
            // "Content-type": "multipart/form-data",
             "Accept": "application/json",
@@ -200,7 +200,7 @@ class UploadDocVC: UIViewController {
     func updateProfileApi(imageOrVideo: UIImage,  params: [String:Any]){
         let imageData = imageOrVideo.jpegData(compressionQuality: 0.25)
         print("image data\(String(describing: imageData))")
-        var url = URL(string:"https://www.getduma.com/upload_document")
+        var url = URL(string:"\(baseURL)upload_document")
       //  if screen == "edit"{
       //      url = URL(string: "https://www.getduma.com/upload_document")
       //  let url = URL(string: "https://www.getduma.com/add_vehicle_detail")
